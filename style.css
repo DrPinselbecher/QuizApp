@@ -1,0 +1,482 @@
+body {
+    margin: 0;
+    background-color: rgba(33, 37, 41, 0.9) !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+nav {
+    position: absolute !important;
+    min-width: 100vw;
+}
+
+h1 {
+    color: lightgrey !important;
+    margin-left: 50px;
+    border: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.card-img-top {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+}
+
+.card-border {
+    border-radius: 10px !important;
+    border-color: rgb(54, 58, 61) !important;
+}
+
+.quiz-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-spacing: 0.2rem;
+    padding-left: 2px;
+    margin-top: 30px;
+}
+
+.card {
+    text-shadow: 1px 1px 1px black;
+    color: rgb(255, 255, 255) !important;
+    background-color: rgba(255, 255, 255, 0.13) !important;
+    font-size: 16px !important;
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.13) !important;
+}
+
+.cardtitle {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-shadow: 4px -4px 14px rgb(0, 0, 0), -4px 4px 14px rgb(0, 0, 0), 4px 4px 14px rgb(0, 0, 0), -4px -4px 14px rgb(0, 0, 0), -12px 3px 16px rgb(0, 0, 0);
+    text-align: center;
+    padding: 0 2rem 0 2rem;
+}
+
+.imageBox {
+    position: relative;
+}
+
+.cardhover:hover {
+    background-color: rgba(255, 255, 255, 0.17) !important;
+    cursor: pointer;
+}
+
+.bg-green {
+    background-color: rgb(77, 167, 107) !important;
+}
+
+.bg-red {
+    background-color: rgb(209, 44, 53) !important;
+}
+
+.btn-disable {
+    color: rgba(255, 255, 255, 0.2) !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+    cursor: default !important;
+}
+
+.heightUp {
+    height: 27rem !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+.endscreenTitle {
+    height: 30% !important;
+    font-size: 40px !important;
+}
+
+.sideClearance {
+    width: 40rem;
+    margin: 0 40px 0 40px;
+}
+
+.endscreenTxt {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-shadow: 4px -4px 14px rgb(0, 0, 0), -4px 4px 14px rgb(0, 0, 0), 4px 4px 14px rgb(0, 0, 0), -4px -4px 14px rgb(0, 0, 0), -12px 3px 16px rgb(0, 0, 0);
+    text-align: center;
+    padding: 0 2rem 0 2rem;
+}
+
+.scoreTxt {
+    margin-bottom: 6px;
+    padding: 0 15px 0 15px;
+    font-size: 34px;
+}
+
+.btn-endscreen {
+    position: absolute;
+    z-index: 2;
+    bottom: 4rem;
+    width: 300px;
+    height: 80px;
+    padding: 0 !important;
+    font-size: 20px !important;
+    text-shadow: 4px -4px 14px rgb(0, 0, 0),
+        -4px 4px 14px rgb(0, 0, 0),
+        4px 4px 14px rgb(0, 0, 0),
+        -4px -4px 14px rgb(0, 0, 0),
+        -12px 3px 16px rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.btn-endscreen:hover {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.cup-1 {
+    position: absolute;
+    z-index: 4;
+    width: 180px;
+    height: auto;
+    transform: rotate(16deg);
+    bottom: 60px;
+    right: 100px;
+}
+
+.cup-2 {
+    position: absolute;
+    z-index: 4;
+    width: 180px;
+    height: auto;
+    transform: rotate(-16deg);
+    bottom: 70px;
+    left: 100px;
+}
+
+.winner {
+    position: absolute;
+    z-index: 4;
+    width: 170px;
+    height: auto;
+    transform: rotate(-16deg);
+    top: 0;
+    left: 0;
+}
+
+.d-none {
+    display: none;
+}
+
+.progress {
+    margin-bottom: 18px;
+}
+
+#startTxt {
+    margin-top: 20px;
+}
+
+#startBtn {
+    margin-bottom: 40px;
+}
+
+@media (max-width:670px) {
+
+    .progress {
+        margin-bottom: 18px;
+    }
+
+    .cup-1 {
+        width: 160px;
+        bottom: 60px;
+        right: 60px;
+    }
+
+    .cup-2 {
+        width: 160px;
+        bottom: 70px;
+        left: 60px;
+    }
+
+    .winner {
+        width: 150px;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media (max-width:600px) {
+
+    .cup-1 {
+        width: 130px;
+        bottom: 50px;
+        right: 60px;
+    }
+
+    .cup-2 {
+        width: 130px;
+        bottom: 30px;
+        left: 60px;
+    }
+
+    .winner {
+        width: 90px;
+        top: 20px;
+        left: 10px;
+    }
+
+    .btn-endscreen {
+        bottom: 2.6rem;
+        width: 280px;
+        height: 60px;
+        padding: 0 !important;
+        font-size: 18px !important;
+    }
+
+    .heightUp {
+        height: 20rem !important;
+    }
+
+    .endscreenTxt {
+        font-size: 26px !important;
+        padding: 0 !important;
+    }
+
+    .scoreTxt {
+        margin-bottom: 3px;
+        padding: 0 13px 0 13px;
+        font-size: 30px;
+    }
+
+    .cardtitle {
+        font-size: 24px !important;
+    }
+
+    .endscreenTitle {
+        height: 26% !important;
+        font-size: 36px !important;
+    }
+}
+
+@media(max-width:530px) {
+
+    .progress {
+        height: 12px !important;
+    }
+
+    .cup-1 {
+        width: 120px;
+        bottom: 40px;
+        right: 10px;
+    }
+
+    .cup-2 {
+        width: 140px;
+        bottom: 30px;
+        left: 20px;
+    }
+
+    .winner {
+        width: 90px;
+        top: 10px;
+        left: 6px;
+    }
+}
+
+@media(max-width:460px) {
+
+    .cup-1 {
+        width: 120px;
+        bottom: 40px;
+        right: 10px;
+    }
+
+    .cup-2 {
+        width: 140px;
+        bottom: 30px;
+        left: 20px;
+    }
+
+    .winner {
+        width: 80px;
+        top: 10px;
+        left: -6px;
+    }
+}
+
+@media(max-width:460px) {
+
+    .cup-1 {
+        width: 120px;
+        bottom: 40px;
+        right: 10px;
+    }
+
+    .cup-2 {
+        width: 140px;
+        bottom: 30px;
+        left: 20px;
+    }
+
+    .winner {
+        width: 80px;
+        top: 10px;
+        left: -6px;
+    }
+}
+
+@media(max-width:430px) {
+
+    #startImage {
+        height: 240px !important;
+    }
+
+    #startTxt {
+        margin-top: 20px;
+    }
+
+    #startBtn {
+        margin-bottom: 10px;
+    }
+
+    .cup-1 {
+        width: 120px;
+        bottom: 40px;
+        right: -20px;
+    }
+
+    .cup-2 {
+        width: 140px;
+        bottom: 30px;
+        left: -12px;
+    }
+
+    .winner {
+        width: 70px;
+        top: 40px;
+        left: -2px;
+    }
+}
+
+@media (max-width:400px) {
+
+    .progress {
+        height: 10px !important;
+        margin-bottom: 10px;
+    }
+
+    .cup-1 {
+        width: 90px;
+        bottom: 40px;
+        right: 10px;
+    }
+
+    .cup-2 {
+        width: 110px;
+        bottom: 20px;
+        left: -10px;
+    }
+
+    .winner {
+        width: 70px;
+        top: 5px;
+        left: 1px;
+    }
+
+    .btn-endscreen {
+        bottom: 2rem;
+        width: 180px;
+        height: 40px;
+        padding: 0 !important;
+        font-size: 14px !important;
+    }
+
+    .heightUp {
+        height: 13rem !important;
+    }
+
+    .endscreenTxt {
+        font-size: 18px !important;
+        padding: 0 !important;
+    }
+
+    .scoreTxt {
+        margin-bottom: 3px;
+        padding: 0 8px 0 8px;
+        font-size: 20px;
+    }
+
+    .sideClearance {
+        margin: 0 16px 0 16px !important;
+    }
+
+    .cardtitle {
+        font-size: 18px !important;
+    }
+
+    .endscreenTitle {
+        height: 26% !important;
+        font-size: 24px !important;
+    }
+
+    .card-body {
+        text-align: center;
+        font-size: 14px !important;
+        padding: 10px !important;
+    }
+
+    .quiz-footer {
+        text-align: start;
+        font-size: 12px !important;
+        word-spacing: 1px !important;
+    }
+
+    .quiz-footer button {
+        font-size: 12px !important;
+    }
+}
+
+@media(max-width:310px) {
+
+    .progress {
+        height: 8px !important;
+    }
+
+    .cup-1 {
+        width: 90px;
+        bottom: 40px;
+        right: -18px;
+    }
+
+    .cup-2 {
+        width: 120px;
+        bottom: 30px;
+        left: -20px;
+    }
+
+    .winner {
+        width: 70px;
+        top: 0;
+        left: -3px;
+    }
+}
